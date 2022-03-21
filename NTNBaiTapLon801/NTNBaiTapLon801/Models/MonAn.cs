@@ -7,12 +7,11 @@ using System.Web;
 
 namespace NTNBaiTapLon801.Models
 {
-    [Table("QLBanAns")]
-    public class QLBanAn
+    [Table("MonAns")]
+    public class MonAn
     {
         [Key]
-        public int SoBan { get; set; }
-        public string TrangthaiBanAn { get; set; }
-        public string DanhsachBanAn { get; set; }
+        public string TenMonAn { get; set; }
+        public int SoLuong { get; set; }
     }
 }

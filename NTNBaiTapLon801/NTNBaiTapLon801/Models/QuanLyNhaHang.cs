@@ -13,6 +13,8 @@ namespace NTNBaiTapLon801.Models
         }
         public virtual DbSet<QLBanAn> QLBanAns { get; set; }
 
+        public virtual DbSet<HoaDon> HoaDons { get; set; }
+        public virtual DbSet<MonAn> MonAns { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }

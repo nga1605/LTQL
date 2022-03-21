@@ -3,24 +3,24 @@ namespace NTNBaiTapLon801.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class QLBA : DbMigration
+    public partial class MA : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.QLBanAns",
+                "dbo.MonAns",
                 c => new
                     {
-                        TrangthaiBanAn = c.String(nullable: false, maxLength: 128),
-                        DanhsachBanAn = c.String(),
+                        TenMonAn = c.String(nullable: false, maxLength: 128),
+                        SoLuong = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.TrangthaiBanAn);
+                .PrimaryKey(t => t.TenMonAn);
             
         }
         
         public override void Down()
         {
-            DropTable("dbo.QLBanAns");
+            DropTable("dbo.MonAns");
         }
     }
 }

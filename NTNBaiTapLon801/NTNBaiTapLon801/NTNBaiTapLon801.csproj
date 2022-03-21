@@ -132,11 +132,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202203090316031_QLBA.cs" />
-    <Compile Include="Migrations\202203090316031_QLBA.Designer.cs">
-      <DependentUpon>202203090316031_QLBA.cs</DependentUpon>
+    <Compile Include="Migrations\202203212213379_QLBA.cs" />
+    <Compile Include="Migrations\202203212213379_QLBA.Designer.cs">
+      <DependentUpon>202203212213379_QLBA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203212229498_HD.cs" />
+    <Compile Include="Migrations\202203212229498_HD.Designer.cs">
+      <DependentUpon>202203212229498_HD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203212235543_MA.cs" />
+    <Compile Include="Migrations\202203212235543_MA.Designer.cs">
+      <DependentUpon>202203212235543_MA.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\HoaDon.cs" />
+    <Compile Include="Models\MonAn.cs" />
     <Compile Include="Models\QLBanAn.cs" />
     <Compile Include="Models\QuanLyNhaHang.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -195,8 +205,14 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202203090316031_QLBA.resx">
-      <DependentUpon>202203090316031_QLBA.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202203212213379_QLBA.resx">
+      <DependentUpon>202203212213379_QLBA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203212229498_HD.resx">
+      <DependentUpon>202203212229498_HD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203212235543_MA.resx">
+      <DependentUpon>202203212235543_MA.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

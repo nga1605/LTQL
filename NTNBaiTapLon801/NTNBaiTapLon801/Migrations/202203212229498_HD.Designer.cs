@@ -7,13 +7,13 @@ namespace NTNBaiTapLon801.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class QLBA : IMigrationMetadata
+    public sealed partial class HD : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(QLBA));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(HD));
         
         string IMigrationMetadata.Id
         {
-            get { return "202203090316031_QLBA"; }
+            get { return "202203212229498_HD"; }
         }
         
         string IMigrationMetadata.Source
