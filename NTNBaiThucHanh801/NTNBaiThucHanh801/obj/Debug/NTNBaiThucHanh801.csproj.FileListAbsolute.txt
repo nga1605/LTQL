@@ -81,7 +81,5 @@ C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThu
 C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.csproj.CopyComplete
 C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.dll
 C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.pdb
-C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.Migrations.hihi.resources
+C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.Migrations.employee.resources
 C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.csproj.GenerateResource.cache
-C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.Migrations.hiih.resources
-C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.Migrations.hii.resources
