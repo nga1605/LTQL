@@ -83,3 +83,5 @@ C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThu
 C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.pdb
 C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.Migrations.employee.resources
 C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.csproj.GenerateResource.cache
+C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.Migrations.Student.resources
+C:\Users\os\Desktop\LTQL\NTNBaiThucHanh801\NTNBaiThucHanh801\obj\Debug\NTNBaiThucHanh801.Migrations.Person.resources

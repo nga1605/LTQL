@@ -11,118 +11,118 @@ using NTNBaiThucHanh801.Models.Process;
 
 namespace NTNBaiThucHanh801.Controllers
 {
-    public class EmployeesController : Controller
+    public class PersonsController : Controller
     {
         private LTQLDbContext db = new LTQLDbContext();
         StringProcess aukey = new StringProcess();
 
-        // GET: Employees
+        // GET: Persons
         public ActionResult Index()
         {
-            return View(db.Employees.ToList());
+            return View(db.Persons.ToList());
         }
 
-        // GET: Employees/Details/5
+        // GET: Persons/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Employee employee = db.Employees.Find(id);
-            if (employee == null)
+            Person person = db.Persons.Find(id);
+            if (person == null)
             {
                 return HttpNotFound();
             }
-            return View(employee);
+            return View(person);
         }
 
-        // GET: Employees/Create
+        // GET: Persons/Create
         public ActionResult Create()
         {
-            if (db.Employees.Count() == 0)
+            if (db.Persons.Count() == 0)
             {
-                ViewBag.NewEPLID = "EPL01";
+                ViewBag.NewPSID = "PS01";
             }
             else
             {
-                var EPLID = db.Employees.OrderByDescending(m => m.EmployeeID).FirstOrDefault().EmployeeID;
-                var newID = aukey.AutoGenerateID("EPL", EPLID);
-                ViewBag.NewEPLID = newID;
+                var PSID = db.Persons.OrderByDescending(m => m.PersonID).FirstOrDefault().PersonID;
+                var newID = aukey.AutoGenerateID("PS", PSID);
+                ViewBag.NewPSID = newID;
             }
-                return View();
+            return View();
         }
 
-        // POST: Employees/Create
+        // POST: Persons/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EmployeeID,EmployeeName")] Employee employee)
+        public ActionResult Create([Bind(Include = "PersonID,PersonName")] Person person)
         {
             if (ModelState.IsValid)
             {
-                db.Employees.Add(employee);
+                db.Persons.Add(person);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(employee);
+            return View(person);
         }
 
-        // GET: Employees/Edit/5
+        // GET: Persons/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Employee employee = db.Employees.Find(id);
-            if (employee == null)
+            Person person = db.Persons.Find(id);
+            if (person == null)
             {
                 return HttpNotFound();
             }
-            return View(employee);
+            return View(person);
         }
 
-        // POST: Employees/Edit/5
+        // POST: Persons/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EmployeeID,EmployeeName")] Employee employee)
+        public ActionResult Edit([Bind(Include = "PersonID,PersonName")] Person person)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(employee).State = EntityState.Modified;
+                db.Entry(person).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(employee);
+            return View(person);
         }
 
-        // GET: Employees/Delete/5
+        // GET: Persons/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Employee employee = db.Employees.Find(id);
-            if (employee == null)
+            Person person = db.Persons.Find(id);
+            if (person == null)
             {
                 return HttpNotFound();
             }
-            return View(employee);
+            return View(person);
         }
 
-        // POST: Employees/Delete/5
+        // POST: Persons/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            Employee employee = db.Employees.Find(id);
-            db.Employees.Remove(employee);
+            Person person = db.Persons.Find(id);
+            db.Persons.Remove(person);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -12,6 +12,9 @@ namespace NTNBaiThucHanh801.Models
         {
         }
         public virtual DbSet<Employee> Employees { get; set; }
+
+        public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
     }
     }
 

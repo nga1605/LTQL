@@ -130,6 +130,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonsController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -137,10 +139,20 @@
     <Compile Include="Migrations\202204111702445_employee.Designer.cs">
       <DependentUpon>202204111702445_employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204112338496_Student.cs" />
+    <Compile Include="Migrations\202204112338496_Student.Designer.cs">
+      <DependentUpon>202204112338496_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204121155348_Person.cs" />
+    <Compile Include="Migrations\202204121155348_Person.Designer.cs">
+      <DependentUpon>202204121155348_Person.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Process\StringProcess.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +196,16 @@
     <Content Include="Views\Employees\Details.cshtml" />
     <Content Include="Views\Employees\Edit.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Persons\Create.cshtml" />
+    <Content Include="Views\Persons\Delete.cshtml" />
+    <Content Include="Views\Persons\Details.cshtml" />
+    <Content Include="Views\Persons\Edit.cshtml" />
+    <Content Include="Views\Persons\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -204,6 +226,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202204111702445_employee.resx">
       <DependentUpon>202204111702445_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204112338496_Student.resx">
+      <DependentUpon>202204112338496_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204121155348_Person.resx">
+      <DependentUpon>202204121155348_Person.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
