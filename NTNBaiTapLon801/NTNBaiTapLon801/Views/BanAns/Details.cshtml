@@ -1,0 +1,35 @@
+﻿@model NTNBaiTapLon801.Models.BanAn
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BanAn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TrangthaiBanAn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrangthaiBanAn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DanhsachBanAn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DanhsachBanAn)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BanAnID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

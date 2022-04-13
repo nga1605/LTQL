@@ -13,7 +13,7 @@ namespace NTNBaiTapLon801.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202204121511017_HoaDon"; }
+            get { return "202204130201506_HoaDon"; }
         }
         
         string IMigrationMetadata.Source

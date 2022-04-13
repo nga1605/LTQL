@@ -7,13 +7,13 @@ namespace NTNBaiTapLon801.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class MonAn : IMigrationMetadata
+    public sealed partial class BanAn : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(MonAn));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(BanAn));
         
         string IMigrationMetadata.Id
         {
-            get { return "202204121515115_MonAn"; }
+            get { return "202204130207445_BanAn"; }
         }
         
         string IMigrationMetadata.Source

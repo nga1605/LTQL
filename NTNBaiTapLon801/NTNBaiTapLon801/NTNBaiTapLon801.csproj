@@ -128,23 +128,24 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BanAnsController.cs" />
     <Compile Include="Controllers\HoaDonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MonAnsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202204121511017_HoaDon.cs" />
-    <Compile Include="Migrations\202204121511017_HoaDon.Designer.cs">
-      <DependentUpon>202204121511017_HoaDon.cs</DependentUpon>
+    <Compile Include="Migrations\202204130201506_HoaDon.cs" />
+    <Compile Include="Migrations\202204130201506_HoaDon.Designer.cs">
+      <DependentUpon>202204130201506_HoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202204121515115_MonAn.cs" />
-    <Compile Include="Migrations\202204121515115_MonAn.Designer.cs">
-      <DependentUpon>202204121515115_MonAn.cs</DependentUpon>
+    <Compile Include="Migrations\202204130205063_MonAn.cs" />
+    <Compile Include="Migrations\202204130205063_MonAn.Designer.cs">
+      <DependentUpon>202204130205063_MonAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202204130119487_BanAn.cs" />
-    <Compile Include="Migrations\202204130119487_BanAn.Designer.cs">
-      <DependentUpon>202204130119487_BanAn.cs</DependentUpon>
+    <Compile Include="Migrations\202204130207445_BanAn.cs" />
+    <Compile Include="Migrations\202204130207445_BanAn.Designer.cs">
+      <DependentUpon>202204130207445_BanAn.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BanAn.cs" />
@@ -200,6 +201,11 @@
     <Content Include="Views\MonAns\Details.cshtml" />
     <Content Include="Views\MonAns\Edit.cshtml" />
     <Content Include="Views\MonAns\Index.cshtml" />
+    <Content Include="Views\BanAns\Create.cshtml" />
+    <Content Include="Views\BanAns\Delete.cshtml" />
+    <Content Include="Views\BanAns\Details.cshtml" />
+    <Content Include="Views\BanAns\Edit.cshtml" />
+    <Content Include="Views\BanAns\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -218,14 +224,14 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202204121511017_HoaDon.resx">
-      <DependentUpon>202204121511017_HoaDon.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204130201506_HoaDon.resx">
+      <DependentUpon>202204130201506_HoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204121515115_MonAn.resx">
-      <DependentUpon>202204121515115_MonAn.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204130205063_MonAn.resx">
+      <DependentUpon>202204130205063_MonAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204130119487_BanAn.resx">
-      <DependentUpon>202204130119487_BanAn.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204130207445_BanAn.resx">
+      <DependentUpon>202204130207445_BanAn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

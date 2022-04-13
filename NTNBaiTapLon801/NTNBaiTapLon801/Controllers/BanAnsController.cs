@@ -11,117 +11,118 @@ using NTNBaiTapLon801.Models.Process;
 
 namespace NTNBaiTapLon801.Controllers
 {
-    public class MonAnsController : Controller
+    public class BanAnsController : Controller
     {
         private QuanLyNhaHang db = new QuanLyNhaHang();
         StringProcess aukey = new StringProcess();
 
-        // GET: MonAns
+        // GET: BanAns
         public ActionResult Index()
         {
-            return View(db.MonAns.ToList());
+            return View(db.BanAns.ToList());
         }
 
-        // GET: MonAns/Details/5
+        // GET: BanAns/Details/5
         public ActionResult Details(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MonAn monAn = db.MonAns.Find(id);
-            if (monAn == null)
+            BanAn banAn = db.BanAns.Find(id);
+            if (banAn == null)
             {
                 return HttpNotFound();
             }
-            return View(monAn);
+            return View(banAn);
         }
 
-        // GET: MonAns/Create
+        // GET: BanAns/Create
         public ActionResult Create()
         {
-            if (db.MonAns.Count() == 0)
+            if (db.BanAns.Count() == 0)
             {
-                ViewBag.NewMAID = "MA01";
+                ViewBag.NewBAID = "BA01";
             }
-            else {
-                var MAID = db.MonAns.OrderByDescending(m => m.MonAnID).FirstOrDefault().MonAnID;
-                var newID = aukey.AutoGenerateID("MA", MAID);
-                ViewBag.NewMAID = newID;
+            else
+            {
+                var BAID = db.BanAns.OrderByDescending(m => m.BanAnID).FirstOrDefault().BanAnID;
+                var newID = aukey.AutoGenerateID("BA", BAID);
+                ViewBag.NewBAID = newID;
             }
             return View();
         }
 
-        // POST: MonAns/Create
+        // POST: BanAns/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MonAnID,TenMonAn,SoLuong")] MonAn monAn)
+        public ActionResult Create([Bind(Include = "BanAnID,TrangthaiBanAn,DanhsachBanAn")] BanAn banAn)
         {
             if (ModelState.IsValid)
             {
-                db.MonAns.Add(monAn);
+                db.BanAns.Add(banAn);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(monAn);
+            return View(banAn);
         }
 
-        // GET: MonAns/Edit/5
+        // GET: BanAns/Edit/5
         public ActionResult Edit(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MonAn monAn = db.MonAns.Find(id);
-            if (monAn == null)
+            BanAn banAn = db.BanAns.Find(id);
+            if (banAn == null)
             {
                 return HttpNotFound();
             }
-            return View(monAn);
+            return View(banAn);
         }
 
-        // POST: MonAns/Edit/5
+        // POST: BanAns/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MonAnID,TenMonAn,SoLuong")] MonAn monAn)
+        public ActionResult Edit([Bind(Include = "BanAnID,TrangthaiBanAn,DanhsachBanAn")] BanAn banAn)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(monAn).State = EntityState.Modified;
+                db.Entry(banAn).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(monAn);
+            return View(banAn);
         }
 
-        // GET: MonAns/Delete/5
+        // GET: BanAns/Delete/5
         public ActionResult Delete(string id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            MonAn monAn = db.MonAns.Find(id);
-            if (monAn == null)
+            BanAn banAn = db.BanAns.Find(id);
+            if (banAn == null)
             {
                 return HttpNotFound();
             }
-            return View(monAn);
+            return View(banAn);
         }
 
-        // POST: MonAns/Delete/5
+        // POST: BanAns/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            MonAn monAn = db.MonAns.Find(id);
-            db.MonAns.Remove(monAn);
+            BanAn banAn = db.BanAns.Find(id);
+            db.BanAns.Remove(banAn);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
