@@ -11,6 +11,7 @@ namespace NTNBaiTapLon801.Models
     public class HoaDon
     {
         [Key]
+        public string HoaDonID { get; set; }
         public string TenMonAn { get; set; }
         public int GiaTien { get; set; }
         public int SoLuong { get; set; }

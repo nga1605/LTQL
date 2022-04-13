@@ -11,6 +11,7 @@ namespace NTNBaiTapLon801.Models
     public class MonAn
     {
         [Key]
+        public string MonAnID { get; set; }
         public string TenMonAn { get; set; }
         public int SoLuong { get; set; }
     }

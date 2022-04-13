@@ -46,10 +46,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -128,26 +128,29 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HoaDonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MonAnsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202203212213379_QLBA.cs" />
-    <Compile Include="Migrations\202203212213379_QLBA.Designer.cs">
-      <DependentUpon>202203212213379_QLBA.cs</DependentUpon>
+    <Compile Include="Migrations\202204121511017_HoaDon.cs" />
+    <Compile Include="Migrations\202204121511017_HoaDon.Designer.cs">
+      <DependentUpon>202204121511017_HoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202203212229498_HD.cs" />
-    <Compile Include="Migrations\202203212229498_HD.Designer.cs">
-      <DependentUpon>202203212229498_HD.cs</DependentUpon>
+    <Compile Include="Migrations\202204121515115_MonAn.cs" />
+    <Compile Include="Migrations\202204121515115_MonAn.Designer.cs">
+      <DependentUpon>202204121515115_MonAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202203212235543_MA.cs" />
-    <Compile Include="Migrations\202203212235543_MA.Designer.cs">
-      <DependentUpon>202203212235543_MA.cs</DependentUpon>
+    <Compile Include="Migrations\202204130119487_BanAn.cs" />
+    <Compile Include="Migrations\202204130119487_BanAn.Designer.cs">
+      <DependentUpon>202204130119487_BanAn.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BanAn.cs" />
     <Compile Include="Models\HoaDon.cs" />
     <Compile Include="Models\MonAn.cs" />
-    <Compile Include="Models\QLBanAn.cs" />
+    <Compile Include="Models\Process\StringProcess.cs" />
     <Compile Include="Models\QuanLyNhaHang.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -187,6 +190,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\HoaDons\Create.cshtml" />
+    <Content Include="Views\HoaDons\Delete.cshtml" />
+    <Content Include="Views\HoaDons\Details.cshtml" />
+    <Content Include="Views\HoaDons\Edit.cshtml" />
+    <Content Include="Views\HoaDons\Index.cshtml" />
+    <Content Include="Views\MonAns\Create.cshtml" />
+    <Content Include="Views\MonAns\Delete.cshtml" />
+    <Content Include="Views\MonAns\Details.cshtml" />
+    <Content Include="Views\MonAns\Edit.cshtml" />
+    <Content Include="Views\MonAns\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -205,14 +218,14 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202203212213379_QLBA.resx">
-      <DependentUpon>202203212213379_QLBA.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204121511017_HoaDon.resx">
+      <DependentUpon>202204121511017_HoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202203212229498_HD.resx">
-      <DependentUpon>202203212229498_HD.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204121515115_MonAn.resx">
+      <DependentUpon>202204121515115_MonAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202203212235543_MA.resx">
-      <DependentUpon>202203212235543_MA.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204130119487_BanAn.resx">
+      <DependentUpon>202204130119487_BanAn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

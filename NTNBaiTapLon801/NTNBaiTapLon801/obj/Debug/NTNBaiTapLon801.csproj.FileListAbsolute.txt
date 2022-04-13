@@ -81,7 +81,7 @@ C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon8
 C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.csproj.CopyComplete
 C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.dll
 C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.pdb
-C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.QLBA.resources
+C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.HoaDon.resources
 C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.csproj.GenerateResource.cache
-C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.HD.resources
-C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.MA.resources
+C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.MonAn.resources
+C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.BanAn.resources
