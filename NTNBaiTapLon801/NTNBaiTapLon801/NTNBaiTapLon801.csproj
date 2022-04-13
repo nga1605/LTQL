@@ -132,6 +132,7 @@
     <Compile Include="Controllers\HoaDonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MonAnsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -147,12 +148,21 @@
     <Compile Include="Migrations\202204130207445_BanAn.Designer.cs">
       <DependentUpon>202204130207445_BanAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204130317071_User.cs" />
+    <Compile Include="Migrations\202204130317071_User.Designer.cs">
+      <DependentUpon>202204130317071_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204130320412_User1.cs" />
+    <Compile Include="Migrations\202204130320412_User1.Designer.cs">
+      <DependentUpon>202204130320412_User1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BanAn.cs" />
     <Compile Include="Models\HoaDon.cs" />
     <Compile Include="Models\MonAn.cs" />
     <Compile Include="Models\Process\StringProcess.cs" />
     <Compile Include="Models\QuanLyNhaHang.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -206,6 +216,11 @@
     <Content Include="Views\BanAns\Details.cshtml" />
     <Content Include="Views\BanAns\Edit.cshtml" />
     <Content Include="Views\BanAns\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -232,6 +247,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204130207445_BanAn.resx">
       <DependentUpon>202204130207445_BanAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204130317071_User.resx">
+      <DependentUpon>202204130317071_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204130320412_User1.resx">
+      <DependentUpon>202204130320412_User1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

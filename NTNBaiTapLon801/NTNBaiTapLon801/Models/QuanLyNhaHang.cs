@@ -14,5 +14,6 @@ namespace NTNBaiTapLon801.Models
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<MonAn> MonAns { get; set; }
         public virtual DbSet<BanAn> BanAns { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
     }
