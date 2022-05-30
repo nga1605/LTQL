@@ -87,3 +87,4 @@ C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon8
 C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.BanAn.resources
 C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.User.resources
 C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.User1.resources
+C:\Users\os\Desktop\LTQL\NTNBaiTapLon801\NTNBaiTapLon801\obj\Debug\NTNBaiTapLon801.Migrations.Account.resources
