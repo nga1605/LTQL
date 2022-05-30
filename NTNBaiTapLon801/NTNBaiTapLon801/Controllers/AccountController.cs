@@ -45,7 +45,7 @@ namespace NTNBaiTapLon801.Controllers
         {
             if (ModelState.IsValid)
             {
-                string encrytionpass = (string)encry.PasswordEncrytion(acc.PassWord);
+                string encrytionpass = (string)encry.PassWordEncrytion(acc.PassWord);
                 var model = db.Accounts.Where(m => m.UserName == acc.UserName && m.PassWord == encrytionpass).ToList().Count();
                 //thông tin đăng nhập chính xác
                 if (model == 1)

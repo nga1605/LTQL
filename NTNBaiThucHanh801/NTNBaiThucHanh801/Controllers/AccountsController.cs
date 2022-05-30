@@ -26,7 +26,7 @@ namespace NTNBaiThucHanh801.Controllers
             if (ModelState.IsValid)
             {
                 //mã hóa mật khẩu trước khi lưu vào database
-                acc.PassWord = encry.PasswordEncrytion(acc.PassWord);
+                acc.PassWord = encry.PassWordEncrytion(acc.PassWord);
                 db.Accounts.Add(acc);
                 db.SaveChanges();
                 return RedirectToAction("Login", "Account");
@@ -45,7 +45,7 @@ namespace NTNBaiThucHanh801.Controllers
         {
             if (ModelState.IsValid)
             {
-                string encrytionpass = (string)encry.PasswordEncrytion(acc.PassWord);
+                string encrytionpass = (string)encry.PassWordEncrytion(acc.PassWord);
                 var model = db.Accounts.Where(m => m.UserName == acc.UserName && m.PassWord == encrytionpass).ToList().Count();
                 //thông tin đăng nhập chính xác
                 if (model == 1)

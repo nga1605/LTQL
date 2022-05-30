@@ -12,10 +12,5 @@ namespace NTNBaiThucHanh801.Models.Process
         {
             return FormsAuthentication.HashPasswordForStoringInConfigFile(pass.Trim(), "MD5");
         }
-
-        internal string PasswordEncrytion(string passWord)
-        {
-            throw new NotImplementedException();
-        }
     }
-}
+    }
